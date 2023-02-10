@@ -1,6 +1,8 @@
 =@charset "UTF-8";
+/* can someone tell me why the import and font face or only working when I put them in the <head> of each individual page *sobs* */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 @font-face { font-family: "Cocogoose"; src: url(fonts/cocogoose-pro.regular.ttf)}
+
 body {
     margin: 0;
     font-family: 'Roboto Slab', sans-serif;
@@ -22,31 +24,6 @@ header {
     color: white;
     font-family: "Cocogoose", sans-serif;
     margin: 0;
-}
-
-#banner {
-    margin: 0;
-    font-weight: 500;
-    font-size: 2.5vh;
-    text-shadow: 5px 5px #1c1c1c;
-}
-
-#banner h1 {
-    text-align: center;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    bottom: 20%;
-}
-
-#banner h2 {
-    font-style: italic;
-    font-size: 2.25vh;
-    text-align: center;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    bottom: 15%;
 }
 
 header h1 {
@@ -102,7 +79,7 @@ footer a {
 
 #about {
     font-size: 1.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
     padding: 50px 20px 0 0;
 }
 
@@ -121,7 +98,7 @@ footer a {
 }
 
 .preview {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 1.5em;
     padding-bottom: 75px;
 }
@@ -277,6 +254,11 @@ textarea {
         color: white;
     }
     
+    body {
+        margin: 0;
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    
     nav li {
         font-size: 1.4em;
         margin: auto;
@@ -339,7 +321,7 @@ textarea {
     }
 
     .preview {
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Roboto Slab', sans-serif;
         font-size: 1.2em;
         padding: 50px;
     }
@@ -361,7 +343,7 @@ textarea {
     
     #about {
         font-size: 1.2em;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Roboto Slab', sans-serif;
         padding: 50px 20px 0 0;
     }
 
