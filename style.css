@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+@font-face { font-family: "Cocogoose"; src: url(fonts/cocogoose-pro.regular.ttf)}
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+header {
+    font-family: "Cocogoose";
+    text-align: center;
+    padding: 5px;
+    background-color: #ffc03a;
+    color: white;
+}
+
+#home {
+    background-image: url(images/IMG_8502_vert.JPG);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Cocogoose", sans-serif;
+    margin: 0;
+}
+
+#banner {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.5vh;
+    text-shadow: 5px 5px #1c1c1c;
+}
+
+#banner h1 {
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 20%;
+}
+
+#banner h2 {
+    font-style: italic;
+    font-size: 2.25vh;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 15%;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0.25em;
+}
+
+header a:link, header a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+header a:focus, header a:hover, header a:active {
+    color: #d19420;
+}
+
+
+nav ul {
+    padding: 0px;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.65em;
+    padding: 0.5em 1em;
+    margin: 2% 8%;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    padding: inherit;
+}
+
+.current {
+    font-size: 1.75em;
+    background-clip: padding-box;
+    background-color: #edb337;
+}
+
+main {
+    margin: 0 10%;
+}
+
+a:link, a:visited {
+    color: #fb982d;
+}
+
+footer a {
+    text-align: center;
+}
+
+#about {
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    padding: 50px 20px 0 0;
+}
+
+#about img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    margin-top: 60px;
+    padding-bottom: 75px;
+}
+
+.preview h2 {
+    margin-bottom: 0;
+}
+
+.preview h3 {
+    margin-top: 1px;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.button {
+    font-family: 'Cocogoose', sans-serif;
+    background-color: #fb982d;
+    border-radius: 50px;
+    box-shadow: 5px 5px #dedede;
+    transition: background-color 0.25s;
+    color: white;
+}
+
+.preview .button {
+    font-size: 1.25em;
+    float: right;
+    text-align: right;
+    padding: 15px 15%;
+}
+
+.button a:link, .button a:visited {
+    color: white;
+}
+
+.button:focus, .button:hover, .button:active {
+    background-color: #eb8b23;
+}
+
+form { 
+    margin: 50px 0;
+    width: 100%;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+input{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+textarea {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+::placeholder {
+    color: #b7b7b7;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    font-size: 1.25em;
+    color: white;
+    font-family: 'Cocogoose', sans-serif;
+    background-color: #fb982d;
+    border-style: none;
+    border-radius: 50px;
+    width: 175px;;
+    padding: 10px 0px;
+    box-shadow: 5px 5px #dedede;
+    transition: background-color 0.25s;
+}
+
+#submit:focus, #submit:hover, #submit:active {
+    background-color: #eb8b23;
+}
+
+.socials {
+    padding: 0;
+    margin: 25px 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+.socials li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.socials img {
+    width: 20%;
+    transition: width 0.25s;
+}
+
+.socials img:focus, .socials img:hover, .socials img:active {
+    width: 23%;
+}
+
+#resume h2 {
+    font-size: 3.25em;
+    margin: 7% 0 3% 0;
+    padding-bottom: 10px;
+    border-bottom-style: dashed;
+    border-bottom-color: lightgray;
+}
+
+#resume h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-weight: 575;
+}
+
+#resume p {
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+    color: #6d6d6d;
+}
+
+#resume .button {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 50px;
+    margin: 5% 15% 2%;
+}
+
+#resume ul {
+    font-size: 1.4em;
+    list-style: square;
+}
+
+
+@media screen and (min-width: 1600px) {
+    header {
+        font-family: "Cocogoose", sans-serif;
+        text-align: center;
+        padding: 5px;
+        background-color: #ffc03a;
+        background-image: url(images/bubbles_left.png), url(images/bubbles_right.png), url(images/banner.png);
+        background-position: left, right, center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    
+    nav li {
+        font-size: 1.4em;
+        margin: auto;
+        display: inline;
+    }
+    
+    .current {
+        font-size: 1.55em;
+    }
+    
+    main {
+        margin: 0 25%;
+    }
+    
+    #games {
+        margin: 0;
+    }
+    
+    #banner {
+        margin: 25%;
+        font-weight: 500;
+        font-size: 2.75em;
+        text-shadow: 5px 5px #1c1c1c;
+    }
+
+    #banner h1 {
+        text-align: right;
+        position: absolute;
+        right: 10%;
+        top: 55%;
+    }
+
+    #banner h2 {
+        text-align: right;
+        font-style: italic;
+        font-size: 1.25em;
+        position: absolute;
+        right: 10%;
+        top: 72%;
+    }
+    
+    .container {
+        margin: 0 25%;
+    }
+    
+    .preview img {
+        float: left;
+        width: 41%;
+        border-radius: 10px;
+        margin-right: 50px;
+        transition: width 1s;
+    }
+
+    .preview img:hover {
+        width: 43%;
+    }
+
+    .preview {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.2em;
+        margin-top: 60px;
+        padding-bottom: 75px;
+        border-bottom-style: solid;
+        border-bottom-color: lightgray;
+    }
+    
+    .preview:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+
+    #last_preview {
+        border-bottom-style: none;
+    }
+    
+    .preview .button {
+        font-size: 1.25em;
+        padding: 10px 55px;
+        margin-bottom: -15px;
+        float: right;
+        position: relative;
+        top: 210px;
+    }
+    
+    #about {
+        font-size: 1.2em;
+        font-family: 'Roboto Slab', serif;
+        padding: 50px 20px 0 0;
+    }
+
+    #about picture {
+        float: left;
+        width: 35%;
+        margin-right: 50px;
+        box-shadow: 10px 10px #dedede;
+    }
+    
+    #resume ul {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 11%;
+    }
+    
+    #home {
+        background-image: url(images/IMG_8502.JPG)
+    }
+    
+    input, textarea {
+        width: 75%;
+    }
+    
+    .socials img {
+        width: 10%;
+    }
+    
+    .socials img:focus, .socials img:hover, .socials img:active {
+        width: 12%;
+    }
+}
