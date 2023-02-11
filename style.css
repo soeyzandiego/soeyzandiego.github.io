@@ -71,8 +71,8 @@ footer a {
 #about {
     font-size: 1.5em;
     font-family: 'Roboto Slab', sans-serif;
-    padding: 50px 20px 0 0;
-    margin-bottom: 75px;
+    float:right;
+    margin: 50px 0;
 }
 
 #about img {
@@ -367,7 +367,7 @@ footer a {
     }
     
     #more_about {
-        font-size: 18px;
+        font-size: 1.1em;
     }
     
     #favorites {
