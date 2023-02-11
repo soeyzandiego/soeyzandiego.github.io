@@ -16,15 +16,6 @@ header {
     color: white;
 }
 
-#home {
-    background-image: url(images/IMG_8502_vert.JPG);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: "Cocogoose", sans-serif;
-    margin: 0;
-}
 
 header h1 {
     font-size: 3em;
@@ -137,57 +128,13 @@ footer a {
     background-color: #eb8b23;
 }
 
-form { 
-    margin: 50px 0;
-    width: 100%;
-}
-
-form ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-input{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
-    width: 100%;
-    padding: 10px 0;
-    margin-bottom: 25px;
-}
-
-textarea {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.1em;
-    width: 100%;
-}
-
 ::placeholder {
     color: #b7b7b7;
 }
 
-#submit {
-    display: block;
-    margin: auto;
-    font-size: 1.25em;
-    color: white;
-    font-family: 'Cocogoose', sans-serif;
-    background-color: #fb982d;
-    border-style: none;
-    border-radius: 50px;
-    width: 175px;;
-    padding: 10px 0px;
-    box-shadow: 5px 5px #dedede;
-    transition: background-color 0.25s;
-}
-
-#submit:focus, #submit:hover, #submit:active {
-    background-color: #eb8b23;
-}
-
 .socials {
     padding: 0;
-    margin: 25px 0 0;
+    margin: 50px 0 25px;
     list-style: none;
     text-align: center;
 }
@@ -220,6 +167,12 @@ textarea {
     font-weight: 575;
 }
 
+#resume h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
 #resume p {
     font-size: 1em;
     margin-top: 0;
@@ -240,8 +193,68 @@ textarea {
     list-style: square;
 }
 
+#experience ul {
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+    color: #6d6d6d;
+    margin-bottom: 0;
+}
 
-@media screen and (min-width: 1600px) {
+.directory {
+    text-align: center;
+    padding: 0;
+}
+
+.directory li {
+        list-style: none;
+}
+
+#favorites ul {
+    list-style-type: "🎮 ";
+}
+
+#hobbies ul {
+    list-style-type: "🎲 ";
+}
+
+#home {
+    margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 30%;
+  padding: 0 15px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
     header {
         font-family: "Cocogoose", sans-serif;
         text-align: center;
@@ -277,31 +290,8 @@ textarea {
         margin: 0;
     }
     
-    #banner {
-        margin: 25%;
-        font-weight: 500;
-        font-size: 2.75em;
-        text-shadow: 5px 5px #1c1c1c;
-    }
-
-    #banner h1 {
-        text-align: right;
-        position: absolute;
-        right: 10%;
-        top: 55%;
-    }
-
-    #banner h2 {
-        text-align: right;
-        font-style: italic;
-        font-size: 1.25em;
-        position: absolute;
-        right: 10%;
-        top: 72%;
-    }
-    
     .container {
-        margin: 0 25%;
+        margin: 0 22%;
     }
     
     #games > div:nth-of-type(odd) {
@@ -327,18 +317,17 @@ textarea {
     }
     
     .preview:after {
-        content: " ";
+        content: "";
         display: block;
         clear: both;
     }
     
     .preview .button {
-        font-size: 1.25em;
+        font-size: 1.2em;
         padding: 10px 55px;
-        margin-bottom: -15px;
+        padding: -15px;
         float: right;
         position: relative;
-        top: 210px;
     }
     
     #about {
@@ -360,13 +349,19 @@ textarea {
         margin-right: 11%;
     }
     
-    #home {
-        background-image: url(images/IMG_8502.JPG)
+    .directory {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: -20px;
     }
     
-    input, textarea {
-        width: 75%;
+    .directory li {
+        font-size: 0.8em;
+        display: inline-block;
+        margin: 0 5px;
     }
+    
     
     .socials img {
         width: 10%;
@@ -374,5 +369,17 @@ textarea {
     
     .socials img:focus, .socials img:hover, .socials img:active {
         width: 12%;
+    }
+    
+    #more_about {
+        font-size: 1.1em;
+    }
+    
+    #favorites {
+        float: left;
+    }
+    
+    #hobbies {
+        float: right;
     }
 }
