@@ -72,6 +72,7 @@ footer a {
     font-size: 1.5em;
     font-family: 'Roboto Slab', sans-serif;
     padding: 50px 20px 0 0;
+    margin-bottom: 75px;
 }
 
 #about img {
@@ -224,33 +225,27 @@ footer a {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:  nowrap;
+  align-content: center;  
   padding: 0 4px;
 }
 
 .column {
   flex: 25%;
-  max-width: 30%;
-  padding: 0 15px;
+  max-width: 25%;
+  padding: 0 6px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin: 8px 0;
   vertical-align: middle;
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .column {
     flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
+    max-width: 150%;
   }
 }
 
@@ -333,12 +328,12 @@ footer a {
     #about {
         font-size: 1.2em;
         font-family: 'Roboto Slab', sans-serif;
-        padding: 50px 20px 0 0;
+        padding: 0px 20px 0 0;
     }
 
     #about picture {
         float: left;
-        width: 35%;
+        width: 37%;
         margin-right: 50px;
         box-shadow: 10px 10px #dedede;
     }
@@ -372,7 +367,7 @@ footer a {
     }
     
     #more_about {
-        font-size: 1.1em;
+        font-size: 18px;
     }
     
     #favorites {
@@ -381,5 +376,9 @@ footer a {
     
     #hobbies {
         float: right;
+    }
+    
+    #interests {
+        float: left;
     }
 }
